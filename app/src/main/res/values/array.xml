@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name ="Shopcategory">
+        <item>청과류</item>
+        <item>편의점</item>
+        <item>수산류</item>
+        <item>육류</item>
+        <item>빵류</item>
+    </string-array>
+</resources>

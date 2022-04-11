@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4D2AB"
+    tools:context=".CustomerJoinActivity">
+
+        <RadioButton
+            android:id="@+id/malebutton2"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="86dp"
+            android:layout_marginBottom="180dp"
+            android:minHeight="48dp"
+            android:text="남성"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.549"
+            app:layout_constraintStart_toEndOf="@+id/femalebutton2"
+            app:layout_constraintTop_toBottomOf="@+id/NickName2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RadioButton
+            android:id="@+id/femalebutton2"
+            android:layout_width="58dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="180dp"
+            android:minHeight="48dp"
+            android:text="여성"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/malebutton2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NickName2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/PhoneNumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="133dp"
+            android:layout_marginBottom="51dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:text="전화번호(아이디)"
+            app:layout_constraintBottom_toTopOf="@+id/PassWord2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="688dp"
+            android:background="#F0efef"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="179dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="182dp"
+                android:layout_marginBottom="8dp"
+                android:text="회원가입"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/NickName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="133dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="닉네임"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PassWord2" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout2">
+
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/PassWord2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="133dp"
+            android:layout_marginBottom="51dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:text="비밀번호를 입력하세요"
+            app:layout_constraintBottom_toTopOf="@+id/NickName2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PhoneNumber2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

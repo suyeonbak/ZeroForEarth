@@ -27,9 +27,19 @@ public class MainActivity extends AppCompatActivity {
         JoinId=(Button)findViewById(R.id.Joinbutton);
         LogIn=(Button)findViewById(R.id.Loginbutton);
 
+        //화면전환 (회원가입(main activity) -> login activity))
+        JoinId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this , LoginActivity.class);
+                startActivity(intent); //액티비티 이해주는 구문
+            }
+        });
 
-        }
 
     }
+
+}
+
 
 
