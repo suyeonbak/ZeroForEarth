@@ -1,3 +1,4 @@
+//회원가입 작성내용 (사장 ver.1)
 package com.example.zeroforearth;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,7 +26,7 @@ public class BossJoinActivity extends AppCompatActivity {
         shopname=(EditText)findViewById(R.id.ShopName);
         shopadress=(EditText)findViewById(R.id.ShopAdress);
         categoryspinner=(Spinner)findViewById(R.id.spinner);
-        NextButton=(Button)findViewById(R.id.nextbutton);
+        NextButton=(Button)findViewById(R.id.UpLoadButton);
 
 
 

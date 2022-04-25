@@ -1,18 +1,17 @@
+//회원가입 작성내용 (고객 ver.)
 package com.example.zeroforearth;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-import android.icu.text.RelativeDateTimeFormatter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.Toolbar;
 import android.os.Bundle;
 
 public class CustomerJoinActivity extends AppCompatActivity {
     RadioButton female_customer,male_customer;
-
+    Button startbutton;
     EditText phonenumber_customer,password_customer,nickname_customer;
 
     @Override
@@ -28,7 +27,7 @@ public class CustomerJoinActivity extends AppCompatActivity {
 
         female_customer=(RadioButton)findViewById(R.id.femalebutton2);
         male_customer=(RadioButton)findViewById(R.id.malebutton2);
-
+        startbutton =(Button)findViewById(R.id.UpLoadButton) ;
         phonenumber_customer=(EditText)findViewById(R.id.PhoneNumber2);
         password_customer=(EditText)findViewById(R.id.PassWord2);
         nickname_customer=(EditText)findViewById(R.id.NickName2);

@@ -45,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="133dp"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="100dp"
             android:layout_marginEnd="133dp"
             android:layout_marginBottom="51dp"
             android:ems="10"
@@ -69,19 +69,19 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="179dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="182dp"
-                android:layout_marginBottom="8dp"
-                android:text="회원가입"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="179dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="182dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="회원가입"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -129,5 +129,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/PhoneNumber2" />
 
+        <Button
+            android:id="@+id/UpLoadButton"
+            android:layout_width="344dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#d6c199"
+            android:text="ZERO 프로젝트 시작하기"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.951"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/malebutton2" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
