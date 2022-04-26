@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class LoginActivity extends AppCompatActivity {
 
     Button BossButton;  //사장님으로 회원가입할래요 버튼

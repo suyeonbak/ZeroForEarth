@@ -64,7 +64,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="상점 이름을 입력하세요"
+        android:hint="상점 이름을 입력하세요"
         app:layout_constraintBottom_toTopOf="@+id/ShopAdress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -82,7 +82,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="상점 주소를 입력하세요"
+        android:hint="상점 주소를 입력하세요"
         app:layout_constraintBottom_toTopOf="@+id/spinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
@@ -90,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ShopName" />
 
     <Button
-        android:id="@+id/UpLoadButton"
+        android:id="@+id/nextbutton"
         android:layout_width="90dp"
         android:layout_height="48dp"
         android:layout_marginStart="283dp"

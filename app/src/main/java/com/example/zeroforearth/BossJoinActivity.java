@@ -26,7 +26,7 @@ public class BossJoinActivity extends AppCompatActivity {
         shopname=(EditText)findViewById(R.id.ShopName);
         shopadress=(EditText)findViewById(R.id.ShopAdress);
         categoryspinner=(Spinner)findViewById(R.id.spinner);
-        NextButton=(Button)findViewById(R.id.UpLoadButton);
+        NextButton=(Button)findViewById(R.id.nextbutton);
 
 
 
@@ -34,7 +34,7 @@ public class BossJoinActivity extends AppCompatActivity {
 
         NextButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(BossJoinActivity.this , BossJoin2Activity.class);
+                Intent intent = new Intent(BossJoinActivity.this , CustomerJoinActivity.class);
                 startActivity(intent); //액티비티 이해주는 구문
             }
 
@@ -42,3 +42,6 @@ public class BossJoinActivity extends AppCompatActivity {
         });
     }
 }
+
+
+

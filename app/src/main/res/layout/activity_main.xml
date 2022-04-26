@@ -7,6 +7,7 @@
     android:background="#E4D2AB"
     tools:context=".MainActivity">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
@@ -22,11 +23,12 @@
             android:layout_height="48dp"
             android:layout_marginTop="42dp"
             android:ems="10"
-            android:inputType="phone"
-            android:hint="휴대폰 번호를 입력하세요"
+            android:hint="아이디를 입력하세요"
+            android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
 
         <EditText
             android:id="@+id/Passwordid"
@@ -36,9 +38,10 @@
             android:layout_marginEnd="1dp"
             android:ems="10"
             android:hint="비밀번호를 입력하세요"
-            android:inputType="numberPassword"
+            android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="@+id/phonenumber"
             app:layout_constraintTop_toBottomOf="@+id/phonenumber" />
+
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Joinbutton"
@@ -56,6 +59,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Passwordid" />
 
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Loginbutton"
             android:layout_width="wrap_content"
@@ -69,6 +73,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Passwordid" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
