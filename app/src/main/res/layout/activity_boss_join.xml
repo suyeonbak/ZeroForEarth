@@ -8,103 +8,144 @@
     tools:context=".BossJoinActivity">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="688dp"
-        android:background="#F0efef"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="179dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="182dp"
-            android:layout_marginBottom="8dp"
-            android:text="회원가입"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="210dp"
         android:layout_height="48dp"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="133dp"
-        android:layout_marginBottom="245dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#000000"
         android:entries="@array/Shopcategory"
-        app:layout_constraintBottom_toBottomOf="parent"
-
+        app:layout_constraintBottom_toTopOf="@+id/nextbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ShopAdress" />
+        app:layout_constraintTop_toBottomOf="@+id/endTextTime" />
 
     <EditText
         android:id="@+id/ShopName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="133dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="20dp"
         android:ems="10"
+        android:hint="상점 이름을 입력하세요"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:hint="상점 이름을 입력하세요"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/ShopAdress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/phonenumber" />
 
     <EditText
         android:id="@+id/ShopAdress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="133dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="20dp"
         android:ems="10"
+        android:hint="상점 주소를 입력하세요"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:hint="상점 주소를 입력하세요"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/startTextTime"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ShopName" />
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="전화번호를 입력하세요"
+        android:inputType="phone"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/ShopName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <EditText
+        android:id="@+id/startTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="20dp"
+        android:ems="12"
+        android:hint="영업시작시간을 입려하세요"
+        android:inputType="time"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/endTextTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ShopAdress" />
+
+    <EditText
+        android:id="@+id/endTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="20dp"
+        android:ems="12"
+        android:hint="영업종료시간을 입력하세요"
+        android:inputType="time"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTextTime" />
 
     <Button
         android:id="@+id/nextbutton"
         android:layout_width="90dp"
         android:layout_height="48dp"
         android:layout_marginStart="283dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="39dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/shape"
         android:backgroundTint="#d6c199"
         android:text="다음"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

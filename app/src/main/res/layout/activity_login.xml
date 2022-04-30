@@ -8,59 +8,33 @@
     tools:context=".LoginActivity"
     tools:ignore="ExtraText">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="688dp"
-        android:background="#F0efef"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="179dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="182dp"
-            android:layout_marginBottom="8dp"
-            android:text="회원가입"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     <Button
         android:id="@+id/Bossbutton"
         android:layout_width="197dp"
         android:layout_height="48dp"
         android:layout_marginStart="171dp"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="146dp"
+        android:layout_marginBottom="70dp"
         android:background="@drawable/shape"
         android:backgroundTint="#FFFFFF"
         android:text="사장님으로 가입할래요"
         android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/Customerbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.621"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Customerbutton"
         android:layout_width="197dp"
         android:layout_height="48dp"
         android:layout_marginStart="171dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="146dp"
-        android:layout_marginBottom="359dp"
+        android:layout_marginBottom="200dp"
         android:background="@drawable/shape"
         android:backgroundTint="#FFFFFF"
         android:text="고객님으로 가입할래요"
@@ -69,8 +43,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.621"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Bossbutton"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/Bossbutton" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

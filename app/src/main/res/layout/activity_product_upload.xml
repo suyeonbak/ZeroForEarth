@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#E4D2AB"
+    tools:context=".ProductUpload">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="17dp"
+        android:ems="15"
+        android:hint="상품명을 입력하세요"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:privateImeOptions="defaultInputmode=korean"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/ProductUploadImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/ProductUploadImage"
+        android:layout_width="309dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="51dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProductName"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+    <TextView
+        android:id="@+id/UpDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="11dp"
+        android:text="게시일 : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/openDatePickerButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProductUploadImage" />
+
+    <Button
+        android:id="@+id/openDatePickerButton"
+        style="?android:spinnerStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="21dp"
+        android:onClick="openDatePicker"
+        android:text="2022년 1월 01일"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/finalDatePickerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/UpDate"
+        app:layout_constraintTop_toBottomOf="@+id/ProductUploadImage" />
+
+    <TextView
+        android:id="@+id/finalDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="11dp"
+        android:text="만료일 : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/finalDatePickerButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpDate" />
+
+    <Button
+        android:id="@+id/finalDatePickerButton"
+        style="?android:spinnerStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="finalDatePicker"
+        android:text="2022년 1월 01일"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/finalDate"
+        app:layout_constraintTop_toBottomOf="@+id/openDatePickerButton" />
+
+    <EditText
+        android:id="@+id/ProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:ems="8"
+        android:hint="금액을 입력하세요"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/ProductSale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalDatePickerButton" />
+
+
+    <EditText
+        android:id="@+id/ProductSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="18dp"
+        android:ems="5"
+        android:hint="할인율"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/ProductFinalPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ProductPrice"
+        app:layout_constraintTop_toBottomOf="@+id/finalDatePickerButton"
+        app:layout_constraintVertical_bias="0.894" />
+
+    <EditText
+        android:id="@+id/ProductFinalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="133dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:hint="최종금액"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProductPrice" />
+
+    <Button
+        android:id="@+id/UpLoadButton"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="261dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="#d6c199"
+        android:text="업로드하기"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProductFinalPrice" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

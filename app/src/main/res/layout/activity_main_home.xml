@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E4D2AB"
     tools:context=".MainHomeActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -28,4 +29,31 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="675dp"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/SearchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:closeIcon="@drawable/ic_baseline_clear_24"
+        app:iconifiedByDefault="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011"
+        app:searchIcon="@drawable/ic_baseline_search_24" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.icu.text.RelativeDateTimeFormatter;
@@ -16,8 +15,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
-import android.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -39,10 +39,23 @@ public class CustomerJoinActivity extends AppCompatActivity {
     // private RadioButton female_customer,male_customer; //성별버튼
     private Button startbutton; // 회원가입 버튼
 
-
     //RadioButton female_customer,male_customer;
-
     //EditText phonenumber_customer,password_customer,nickname_customer;
+
+
+    //상단바 이전버튼 클릭시 이동할경로 설정
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:{
+
+                Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                startActivity(intent);
+                return true;
+            }
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +71,12 @@ public class CustomerJoinActivity extends AppCompatActivity {
         mNick = findViewById(R.id.NickName2);
 
         startbutton = findViewById(R.id.startbutton);
+
+        //툴바생성(상단바)
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //뒤로가기
+        getSupportActionBar().setTitle(" "); // 툴바제목설정
 
 
         // Firebase Auth 진행
@@ -134,6 +153,17 @@ public class CustomerJoinActivity extends AppCompatActivity {
                 Intent intent = new Intent(CustomerJoinActivity.this, MainActivity.class);
                 startActivity(intent); //액티비티 이해주는 구문
             }
+        });
+
+        //화면전환 (사장정보입력2 -> 메인홈화면)
+
+        startbutton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(CustomerJoinActivity.this , MainHomeActivity.class);
+                startActivity(intent); //액티비티 이해주는 구문
+            }
+
+
         });
 
     }
