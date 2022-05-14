@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Management"
+    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="411dp"
+        android:layout_height="683dp"
+        android:background="#E4D2AB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="417dp"
+            android:layout_height="58dp"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_upload"
+            android:layout_width="136dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="247dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#FFFFFF"
+            android:text="매물올리기"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saletext2"
+            app:srcCompat="@drawable/ic_baseline_photo_24" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="63dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saletext1"
+            app:srcCompat="@drawable/ic_baseline_photo_24" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="11dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_re1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_confirm"
+            app:srcCompat="@drawable/ic_baseline_photo_24" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_upload"
+            app:srcCompat="@drawable/ic_baseline_photo_24" />
+
+        <TextView
+            android:id="@+id/saletext1"
+            android:layout_width="141dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="11dp"
+            android:text="할인금액"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_re1" />
+
+        <TextView
+            android:id="@+id/saletext4"
+            android:layout_width="141dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="27dp"
+            android:text="할인금액"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_re4" />
+
+        <TextView
+            android:id="@+id/saletext3"
+            android:layout_width="141dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="27dp"
+            android:text="할인금액"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_re3" />
+
+        <TextView
+            android:id="@+id/saletext2"
+            android:layout_width="141dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="23dp"
+            android:text="할인금액"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_re2" />
+
+        <TextView
+            android:id="@+id/text_confirm"
+            android:layout_width="187dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="198dp"
+            android:text="매물확인"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <Button
+            android:id="@+id/button_re2"
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#FFFFFF"
+            android:text="수정"
+            app:layout_constraintEnd_toStartOf="@+id/button_remove2"
+            app:layout_constraintTop_toBottomOf="@+id/image2" />
+
+        <Button
+            android:id="@+id/button_remove2"
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#FFFFFF"
+            android:text="삭제"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image2" />
+
+        <Button
+            android:id="@+id/button_re3"
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#FFFFFF"
+            android:text="수정"
+            app:layout_constraintEnd_toStartOf="@+id/button_remove3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image3" />
+
+        <Button
+            android:id="@+id/button_re4"
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#FFFFFF"
+            android:text="수정"
+            app:layout_constraintBottom_toTopOf="@+id/saletext4"
+            app:layout_constraintEnd_toStartOf="@+id/button_remove4"
+            app:layout_constraintTop_toBottomOf="@+id/image4" />
+
+        <Button
+            android:id="@+id/button_re1"
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#FFFFFF"
+            android:text="수정"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+        <Button
+            android:id="@+id/button_remove1"
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#FFFFFF"
+            android:text="삭제"
+            app:layout_constraintStart_toEndOf="@+id/button_re1"
+            app:layout_constraintTop_toBottomOf="@+id/image1"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button_remove3"
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#FFFFFF"
+            android:text="삭제"
+            app:layout_constraintStart_toEndOf="@+id/button_re3"
+            app:layout_constraintTop_toBottomOf="@+id/image3"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button_remove4"
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="23dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#FFFFFF"
+            android:text="삭제"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+

@@ -7,6 +7,7 @@
     android:background="#E4D2AB"
     tools:context=".ProductUpload">
 
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="409dp"
@@ -173,7 +174,7 @@
         android:layout_width="140dp"
         android:layout_height="52dp"
         android:layout_marginStart="261dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="76dp"
         android:background="@drawable/shape"

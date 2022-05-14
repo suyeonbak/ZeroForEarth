@@ -1,5 +1,5 @@
 //상품등록(사장)
-//캘린더는 따로 작동되도록 기능구현 완료.
+// 캘린더는 작동이 되도록 기능구현 해두었습니다.
 // 최종금액 부분 자동계산 될수있도록 구현해주세요.
 // 업로드 버튼 눌렀을때 파이어베이스에 저장될수 있게 해주세요.
 
@@ -21,6 +21,7 @@ import android.widget.EditText;
 
 import java.util.Calendar;
 
+
 public class ProductUpload extends AppCompatActivity {
 
     EditText ProductName; //상품명 등록
@@ -29,9 +30,11 @@ public class ProductUpload extends AppCompatActivity {
     EditText ProductFinalPrice; //최종 금액 등록 (**금액에 할인율 계산한 값 자동으로 값이 나오게 해주세요 :)
     Button UpLoadButton; //업로드 버튼 (클릭시 상품이 등록되고, 데이터베이스에 저장될수있도록 해주세요!)
 
+
     //상단바 이전버튼 클릭시 이동할경로 설정
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
         switch (item.getItemId()){
             case android.R.id.home:{
 

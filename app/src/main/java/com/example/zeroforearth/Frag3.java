@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 public class Frag3 extends Fragment {
@@ -34,6 +35,11 @@ public class Frag3 extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.frag3,container, false);
+
+        /*//툴바생성(상단바)
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(" "); // 툴바제목설정*/
 
         //변수 선언
         picture = (ImageView)v.findViewById(R.id.picture);
@@ -54,8 +60,48 @@ public class Frag3 extends Fragment {
                 startActivity(intent);//액티비티 이해주는 구문
 
             }
+
+
         });
 
+        //화면전환 (내 정보 -> MypageInfo)
+        wishList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),Wishlist.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);//액티비티 이해주는 구문
+
+            }
+
+
+        });
+
+        //화면전환 (내 정보 -> MypageInfo)
+        myInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),MypageInfo.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);//액티비티 이해주는 구문
+
+            }
+
+
+        });
+
+        //화면전환 (BOSS 내가 올린 매물 -> Management)
+        upLoadCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),Management.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);//액티비티 이해주는 구문
+
+            }
+
+
+        });
 
         return v;
 

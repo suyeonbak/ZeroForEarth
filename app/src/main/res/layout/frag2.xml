@@ -1,13 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="#E4D2AB"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2번화면입니다."
-        android:textSize="40sp"/>
+        android:orientation="vertical" >
 
-</LinearLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="675dp"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/SearchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:closeIcon="@drawable/ic_baseline_clear_24"
+            app:iconifiedByDefault="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.011"
+            app:searchIcon="@drawable/ic_baseline_search_24" />
+
+        <ImageView
+            android:id="@+id/marketing"
+            android:layout_width="359dp"
+            android:layout_height="201dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_photo_24" />
+
+        <ImageView
+            android:id="@+id/product1"
+            android:layout_width="127dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="31dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/marketing"
+            app:srcCompat="@drawable/ic_baseline_photo_24" />
+
+        <ImageView
+            android:id="@+id/product2"
+            android:layout_width="127dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="43dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product1"
+            app:srcCompat="@drawable/ic_baseline_photo_24" />
+
+        <ImageView
+            android:id="@+id/product3"
+            android:layout_width="127dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="43dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product2"
+            app:srcCompat="@drawable/ic_baseline_photo_24" />
+
+        <TextView
+            android:id="@+id/producttext1"
+            android:layout_width="153dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="18dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/smile1"
+            app:layout_constraintStart_toEndOf="@+id/product1"
+            app:layout_constraintTop_toBottomOf="@+id/marketing" />
+
+        <TextView
+            android:id="@+id/producttext3"
+            android:layout_width="153dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="18dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/smile3"
+            app:layout_constraintStart_toEndOf="@+id/product3"
+            app:layout_constraintTop_toBottomOf="@+id/producttext2" />
+
+        <TextView
+            android:id="@+id/producttext2"
+            android:layout_width="153dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="18dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/smile2"
+            app:layout_constraintStart_toEndOf="@+id/product2"
+            app:layout_constraintTop_toBottomOf="@+id/producttext1" />
+
+        <ImageButton
+            android:id="@+id/smile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="19dp"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/producttext1"
+            app:layout_constraintTop_toBottomOf="@+id/marketing"
+            app:srcCompat="@drawable/ic_baseline_emoji_emotions_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/smile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="112dp"
+            android:layout_marginEnd="19dp"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/producttext2"
+            app:layout_constraintTop_toBottomOf="@+id/smile1"
+            app:srcCompat="@drawable/ic_baseline_emoji_emotions_24"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/smile3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="112dp"
+            android:layout_marginEnd="19dp"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/producttext3"
+            app:layout_constraintTop_toBottomOf="@+id/smile2"
+            app:srcCompat="@drawable/ic_baseline_emoji_emotions_24"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

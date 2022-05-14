@@ -1,5 +1,4 @@
 //하단바 1번 클릭시 보이는 화면 (지도)
-//하단바 1번 클릭시 보이는 화면 (지도)
 package com.example.zeroforearth;
 
 import android.os.Bundle;
@@ -12,6 +11,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 public class Frag1 extends Fragment {
@@ -28,11 +28,21 @@ public class Frag1 extends Fragment {
         View v = inflater.inflate(R.layout.frag1,container, false);
 
 
+       /*
+        //툴바생성(상단바)
+        Toolbar toolbar = v.findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(" "); // 툴바제목설정*/
+
+
         //변수 선언
         myloation_textView = (TextView) v.findViewById(R.id.myloation_textView);
         mylocation_imageButton = (ImageButton) v.findViewById(R.id.mylocation_imageButton);
         location_imageButton=(ImageButton) v.findViewById(R.id.location_imageButton);
 
         return v;
+
+
+
     }
 }
