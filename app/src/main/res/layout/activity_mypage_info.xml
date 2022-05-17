@@ -62,21 +62,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Nicknameinfo" />
 
-    <Button
-        android:id="@+id/Logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="290dp"
-        android:layout_marginTop="86dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginBottom="69dp"
-        android:background="@drawable/shape"
-        android:backgroundTint="#d6c199"
-        android:text="로그아웃"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sexinfo" />
 
     <TextView
         android:id="@+id/Nickname"
