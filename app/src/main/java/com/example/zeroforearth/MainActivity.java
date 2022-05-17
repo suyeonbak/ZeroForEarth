@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     EditText PasswordId;   //비밀번호
     Button JoinId;// 회원가입 버튼
     Button LogIn;// 로그인 버튼
+    Button Repassword; //비밀번호 재설정
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         PasswordId=(EditText)findViewById(R.id.Passwordid);
         JoinId=(Button)findViewById(R.id.Joinbutton);
         LogIn=(Button)findViewById(R.id.Loginbutton);
+        Repassword=(Button) findViewById(R.id.Repassword);
+
 
 
 

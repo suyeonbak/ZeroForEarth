@@ -24,6 +24,7 @@ public class BossJoinActivity extends AppCompatActivity {
     EditText endTextTime;    //영업종료시간
     Spinner categoryspinner;  //카테고리
     Button NextButton;  //다음버튼
+    ImageButton smilebutton; //상단바 스마일(찜목록 확인)
 
 
     //상단바 이전버튼 클릭시 이동할경로 설정
@@ -52,6 +53,7 @@ public class BossJoinActivity extends AppCompatActivity {
         phonenumber=(EditText)findViewById(R.id.phonenumber);
         categoryspinner=(Spinner)findViewById(R.id.spinner);
         NextButton=(Button)findViewById(R.id.nextbutton);
+        //smilebutton=(ImageButton)findViewById(R.id.smilebutton);
 
 
         //툴바생성(상단바)
@@ -65,13 +67,24 @@ public class BossJoinActivity extends AppCompatActivity {
 
         NextButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(BossJoinActivity.this , CustomerJoinActivity.class);
+                Intent intent = new Intent(BossJoinActivity.this , BossJoin2Activity.class);
+                startActivity(intent); //액티비티 이해주는 구문
+            }
+
+
+        });
+/*
+        //화면전환(상단 스마일 -> ? )
+        smilebutton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(BossJoinActivity.this , MainHomeActivity.class);
                 startActivity(intent); //액티비티 이해주는 구문
             }
 
 
         });
 
+ */
     }
 }
 

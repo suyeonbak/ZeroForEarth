@@ -1,157 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!--삭제보류-->
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E4D2AB"
-    tools:context=".BossJoin2Activity">
+    tools:context=".CustomerJoinActivity">
 
-
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="688dp"
-            android:background="#F0efef"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="179dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="182dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="회원가입"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <EditText
-            android:id="@+id/PhoneNumber"
+            android:id="@+id/PhoneNumber2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="133dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="133dp"
-            android:layout_marginBottom="51dp"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="101dp"
+            android:layout_marginBottom="30dp"
             android:ems="10"
-            android:inputType="phone"
+            android:hint="아이디를 입력하세요"
+            android:inputType="textEmailAddress"
             android:minHeight="48dp"
-            android:text="전화번호(아이디)"
-            app:layout_constraintBottom_toTopOf="@+id/PassWord"
+            app:layout_constraintBottom_toTopOf="@+id/PassWord2"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
         <EditText
-            android:id="@+id/PassWord"
+            android:id="@+id/NickName2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="133dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="133dp"
-            android:layout_marginBottom="51dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="101dp"
+            android:layout_marginBottom="100dp"
             android:ems="10"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            android:text="비밀번호를 입력하세요"
-            app:layout_constraintBottom_toTopOf="@+id/NickName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.507"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PhoneNumber" />
-
-        <EditText
-            android:id="@+id/NickName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="133dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="133dp"
-            android:layout_marginBottom="51dp"
-            android:ems="10"
+            android:hint="닉네임"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="닉네임"
-            app:layout_constraintBottom_toTopOf="@+id/femalebutton"
+            app:layout_constraintBottom_toTopOf="@+id/startButton2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PassWord" />
+            app:layout_constraintTop_toBottomOf="@+id/passWordCheck2" />
 
-        <RadioGroup
-            android:id="@+id/radio_group"
+        <EditText
+            android:id="@+id/PassWord2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
-            app:layout_constraintTop_toTopOf="@+id/constraintLayout2">
-
-        </RadioGroup>
-
-        <RadioButton
-            android:id="@+id/femalebutton"
-            android:layout_width="58dp"
             android:layout_height="48dp"
-            android:layout_marginStart="95dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="68dp"
-            android:layout_marginBottom="180dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="101dp"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:hint="비밀번호를 입력하세요"
+            android:inputType="textPassword"
             android:minHeight="48dp"
-            android:text="여성"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/malebutton"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/NickName" />
-
-        <RadioButton
-            android:id="@+id/malebutton"
-            android:layout_width="58dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="65dp"
-            android:layout_marginEnd="86dp"
-            android:layout_marginBottom="180dp"
-            android:minHeight="48dp"
-            android:text="남성"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/passWordCheck2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.549"
-            app:layout_constraintStart_toEndOf="@+id/femalebutton"
-            app:layout_constraintTop_toBottomOf="@+id/NickName"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PhoneNumber2" />
+
+        <EditText
+            android:id="@+id/passWordCheck2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="101dp"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:hint="비밀번호를 확인하세요"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/NickName2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PassWord2" />
 
         <Button
-            android:id="@+id/startbutton"
+            android:id="@+id/startButton2"
             android:layout_width="344dp"
             android:layout_height="48dp"
             android:layout_marginStart="39dp"
-            android:layout_marginTop="51dp"
             android:layout_marginEnd="39dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="68dp"
             android:background="@drawable/shape"
             android:backgroundTint="#d6c199"
             android:text="ZERO 프로젝트 시작하기"
             android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.951"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/femalebutton" />
+            app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

@@ -9,30 +9,29 @@
 
 
         <EditText
-            android:id="@+id/PhoneNumber2"
+            android:id="@+id/PhoneNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="133dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="133dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="101dp"
             android:layout_marginBottom="30dp"
             android:ems="10"
             android:hint="아이디를 입력하세요"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
-            app:layout_constraintBottom_toTopOf="@+id/PassWord2"
+            app:layout_constraintBottom_toTopOf="@+id/PassWord"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
         <EditText
-            android:id="@+id/NickName2"
+            android:id="@+id/NickName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="133dp"
+            android:layout_marginStart="100dp"
             android:layout_marginTop="30dp"
-            android:layout_marginEnd="133dp"
+            android:layout_marginEnd="101dp"
             android:layout_marginBottom="100dp"
             android:ems="10"
             android:hint="닉네임"
@@ -40,45 +39,45 @@
             android:minHeight="48dp"
             app:layout_constraintBottom_toTopOf="@+id/startbutton"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passWordCheck" />
 
         <EditText
-            android:id="@+id/PassWord2"
+            android:id="@+id/PassWord"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:layout_marginStart="133dp"
+            android:layout_marginStart="100dp"
             android:layout_marginTop="30dp"
-            android:layout_marginEnd="133dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="101dp"
+            android:layout_marginBottom="30dp"
             android:ems="10"
             android:hint="비밀번호를 입력하세요"
             android:inputType="textPassword"
             android:minHeight="48dp"
             app:layout_constraintBottom_toTopOf="@+id/passWordCheck"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PhoneNumber2" />
+            app:layout_constraintTop_toBottomOf="@+id/PhoneNumber" />
 
         <EditText
             android:id="@+id/passWordCheck"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:layout_marginStart="133dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="133dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="101dp"
             android:layout_marginBottom="30dp"
             android:ems="10"
             android:hint="비밀번호를 확인하세요"
             android:inputType="textPassword"
             android:minHeight="48dp"
-            app:layout_constraintBottom_toTopOf="@+id/NickName2"
+            app:layout_constraintBottom_toTopOf="@+id/NickName"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PassWord2" />
+            app:layout_constraintTop_toBottomOf="@+id/PassWord" />
 
         <Button
             android:id="@+id/startbutton"
